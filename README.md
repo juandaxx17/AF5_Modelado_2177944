@@ -1,6 +1,11 @@
 ![AF5 · Péndulo-robot](assets/portada.png)
 
-**Modelado y Simulación de Sistemas Mecatrónicos · FIME, UANL · Grupo 004, V6**
+![Cómo ejecutar](assets/ejecutar.png)
+
+1. Abrir la [notebook en Google Colab](https://colab.research.google.com/github/juandaxx17/AF5_Modelado_2177944/blob/main/AF5_Pendulo_Robot.ipynb).
+2. Seleccionar **Entorno de ejecución → Ejecutar todas**.
+
+**En tu computadora:** descargar el repositorio, instalar las dependencias con `pip install -r requirements.txt`, abrir la notebook en Jupyter y ejecutar todas las celdas.
 
 [**Abrir notebook con resultados**](AF5_Pendulo_Robot.ipynb) · [**Abrir en Google Colab**](https://colab.research.google.com/github/juandaxx17/AF5_Modelado_2177944/blob/main/AF5_Pendulo_Robot.ipynb) · [**Documento en Prism**](https://prism.openai.com/?u=1eb8506f-eb59-4978-9170-48f4db936aa4&pg=1)
 
@@ -66,23 +71,16 @@ La fricción de Coulomb se regulariza mediante `tanh(velocidad / epsilon)`, con 
 | Velocidad a 10 s | **3.638357 rad/s** |
 | Velocidad máxima muestreada | **4.654989 rad/s** |
 
-La posición no está envuelta a ±π. El par supuesto produce rotaciones completas; no se aplica un controlador de posición. Se verificaron convergencia, sensibilidad de la regularización, balance energético y reposo sin par motor. Los detalles y salidas están en la notebook.
+La posición no está envuelta a ±π. El par supuesto produce rotaciones completas; no se aplica un controlador de posición.
 
 ![07 Conclusión grupal](assets/conclusion.png)
 
 > **Pendiente del equipo:** redactar la conclusión en Prism y confirmar con el ejemplo de clase el par motor, el origen del ángulo y la referencia de la inercia.
 
-![08 Referencias y reproducción](assets/referencias.png)
+![08 Referencias](assets/referencias.png)
 
 - [Tedrake, R. · Underactuated Robotics: The Simple Pendulum](https://underactuated.mit.edu/pend.html).
 - [SciPy · Documentación oficial de solve_ivp](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html).
-
-### Cómo ejecutar
-1. Instalar las dependencias: `pip install -r requirements.txt`.
-2. Abrir la notebook en Jupyter o Google Colab.
-3. Ejecutar todas las celdas en orden.
-
-Las salidas y gráficas guardadas corresponden a los parámetros indicados. Las comprobaciones verifican convergencia, sensibilidad de la regularización, balance energético y reposo sin par motor.
 
 ### Archivos del repositorio
 
